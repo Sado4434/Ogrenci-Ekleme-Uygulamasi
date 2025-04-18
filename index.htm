@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" action="">
+        <h1>Öğrenci Ekle</h1>
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" placeholder="ad" required><br><br>
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" placeholder="soyad" required><br><br>
+        <label for="not">Not:</label>
+        <input type="number" name="not" id="not" value="not" placeholder="not" required><br><br>
+        <button id="button">Öğrenci Ekle</button>
+    </form>
+    <div id="ogrenci_listesi">
+    </div>
+    <form id="ogrenci_ara_form">
+        <label for="ogrenci_ara">Ara:</label>
+        <input type="text" id="ogrenci_ara">
+        <button id="ogrenci_ara_button">Ara</button>
+    </form>
+    <div style="background-color: blue; width: 200px; height: 40px;" id="bulunan_ogrenci_listesi"></div>
+    <div id="not_ortalamasi_div" style="width: 400px;" id="not_ortalamasi"><h1>Öğrencilerin Not Ortalaması</h1>
+        <center><button id="hesapla_button">Hesapla</button>
+            <p id="hesapla_display">0</p>
+        </center>
+        
+    </div>
+    <script src="app.js" ></script>
+</body>
+</html>
